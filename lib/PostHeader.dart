@@ -189,3 +189,29 @@ class _PostRed extends StatelessWidget {
         textNegative: 'Decline');
   }
 }
+
+class PostList extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.only(top: 48),
+      child: Column(
+        mainAxisSize: MainAxisSize.max,
+        children: [
+          _PostHeader(),
+          Expanded(
+              child: ListView(
+            children: [
+              _PostGreen(),
+              _PostRed(),
+              _PostGreen(),
+              _PostRed(),
+              _PostGreen(),
+              _PostRed(),
+            ],
+          ))
+        ],
+      ),
+    );
+  }
+}

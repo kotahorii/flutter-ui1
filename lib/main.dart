@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui/PostHeader.dart';
 import 'package:flutter_ui/SideNavigation.dart';
 
 void main() {
@@ -28,7 +29,8 @@ class AdminMobilePage extends StatelessWidget {
         const VerticalDivider(
           thickness: 1,
           width: 1,
-        )
+        ),
+        Expanded(child: PostList())
       ]),
     );
   }
